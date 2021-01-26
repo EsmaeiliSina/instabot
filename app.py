@@ -3,14 +3,15 @@ import time
 import random
 from instagrapi import Client
 
-cl = Client()
-cl.login('USERNAME','PASSWORD')
-json.dump(
-    cl.get_settings(),
-    open('session.json', 'w')
-)
+# cl = Client()
+# cl.login('USERNAME','PASSWORD')
+# json.dump(
+#     cl.get_settings(),
+#     open('session.json', 'w')
+# )
 
-#cl = Client(json.load(open('session.json')))
+cl = Client(json.load(open('settings.json')))
+print('Login Successfully.')
 
 media = cl.hashtag_medias_recent('python', amount=20) 
 

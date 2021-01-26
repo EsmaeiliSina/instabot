@@ -16,7 +16,8 @@ json.dump(
     open('session.json', 'w')
 )
 ```
- After the first login, comment on this code and login with session file.
+After the first login, comment on this code and login with session file.
+> Login may take a while
 ## login with session file
 ```
 cl = Client(json.load(open('session.json')))
@@ -38,4 +39,4 @@ for m in media:
 
 print('Done')
 ```
-
+>Returning posts may take as long as the amount number of post
