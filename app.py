@@ -3,17 +3,17 @@ import time
 import random
 from instagrapi import Client
 
-# cl = Client()
-# cl.login('USERNAME','PASSWORD')
-# json.dump(
-#     cl.get_settings(),
-#     open('session.json', 'w')
-# )
+cl = Client()
+cl.login('USERNAME','PASSWORD')
+json.dump(
+    cl.get_settings(),
+    open('session.json', 'w')
+)
 
-cl = Client(json.load(open('settings.json')))
-print('Login Successfully.')
+# cl = Client(json.load(open('settings.json')))
+print('Login Successfully...')
 
-media = cl.hashtag_medias_recent('python', amount=10) # get 10 recent post with python hashtag
+media = cl.hashtag_medias_recent('python', amount=10)   # get 10 recent post with python hashtag
 
 c = 0
 for m in media:
