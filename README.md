@@ -1,7 +1,5 @@
 # Instagram Auto like and comment 😍
 
-![GitHub repo size](https://img.shields.io/github/repo-size/EsmaeiliSina/instabot?style=social)
-
 ## install instagrapi 
 ```
 pip install instagrapi
